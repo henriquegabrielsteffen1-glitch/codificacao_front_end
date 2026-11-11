@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <form>
+
+    <fieldset>
+        <legend> nome do agrupamento</legend>
+            <label for="nomEcompleto">nome completo</label>
+            <input type="text" id="nomEcompleto" name="nomEcompleto">
+            <label for="eMail">email</label>
+            <input type="email" id="eMail" name="eMail">
+    </fieldset>
+    <fieldset>
+        <label for="cep">cep</label>
+        <input type="text" id="cep" name="cep"
+            pattern="[0-9]{5}-[0-9]{3}"
+            placeholder="00000-000"
+            title="formato: 00000-000"
+            required>
+    </fieldset>
+
+
+
+
+    <label for="mensagem">mensagem</label>
+    <textarea id="mensagem" name="mensagem" rows="5" cols="10" minlength="3" maxlength="10" autofocus ></textarea>
+    <label for="number">numero</label>
+    <input type="number" id="numbero" name="numero" min="3" max="5">
+
+    <label for="campoculto">campoOculto</label>
+    <input type="text" name="campoculto" id="campoculto" readonly>
+
+        <label for="eMail">email</label>
+        <input type="email" id="eMail" name="eMail" autocomplete="email">
+
+
+
+    <button type="submit">enviar</button>
+    <button type="reset">reset</button>
+
+</form>
+
+
+
+</body>
+</html>
